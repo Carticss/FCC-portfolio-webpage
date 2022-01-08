@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: roboto;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+  /* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Navbar section */
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #714bab;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+#navbar > ul {
+    display: flex;
+    margin-right: 2em;
+}
+
+#navbar > ul > li {
+    margin-left: 2em;
+    list-style: none;
+    padding: 1.5em;
+}
+
+#navbar > ul > li > a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Welcome section */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section > h1 {
+    font-size: 6rem;
+    font-style: italic;
+    color: white;
+}
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
+}
+
+#projects > h1 {
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 2em;
+    text-decoration: underline;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.p-link {
+    background: #303841;
+    width: 30em;
+    height: 34em;
+    align-self: center;
+    justify-self: center;
+}
+
+.p-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.p-link > a > img {
+    width: 30em; 
+    height: 30em; 
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2em;
+    padding-top: .3em;
+}
